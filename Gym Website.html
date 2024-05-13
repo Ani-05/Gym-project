@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Gulzar&family=Splash&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Baloo Bhai 2', cursive;
+            background: url(images/bg.jpg);
+            background-size: 1442px 855px;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            color: black;
+        }
+
+        .left {
+            /*border: 2px solid rgb(194, 19, 19);*/
+            margin: auto;
+            position: absolute;
+            display: inline-block;
+            top: 10px;
+            left: 2%;
+        }
+
+        .mid {
+            /*border: 2px solid rgb(223, 132, 132);*/
+            display: block;
+            margin: -25px auto;
+            margin-left: 180px;
+            width: 82%;
+        }
+
+        .right {
+            /*border: 2px solid rgb(234, 248, 42);*/
+            text-align: right;
+    width: 160px;
+    margin: -38px;
+    padding-top: 27px;
+    border-bottom-left-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 45px;
+        }
+
+        .left div {
+            font-size: 18px;
+            color: rgb(200, 24, 94);
+            text-shadow: 20px;
+            text-align: center;
+            padding-left: -30px;
+            line-height: 30px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: #d7544f9e;
+            display: inline-block;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .navbar li {
+
+            display: inline-block;
+            font-size: 19px;
+            margin: 17px 35px;
+
+        }
+
+        .navbar li a {
+            color: #faf5da;
+            text-shadow: #222020;
+            font-weight: bold;
+            text-decoration: none;
+            /*padding: 2px 73px;*/
+            padding: 3px 3px;
+            margin-right: 50px;
+            padding-bottom: 20px;
+        }
+
+        .navbar li a.active,
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: brown;
+        }
+
+        .btn {
+            display: inline-block;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+            margin: 2px -6px;
+            padding: 3px 23px;
+            background-color: #e6d594bb;
+            color: #080a0c;
+            cursor: pointer;
+            border: 2px solid #cf7e5b;
+            border-bottom-left-radius: 15px;
+            border-top-left-radius: 15px;
+            font-size: 15px;
+
+        }
+
+
+        .btn:hover {
+            background-color: rgb(204, 231, 221);
+        }
+
+        .left img {
+            width: 190px;
+            margin: -75px;
+            margin-left: -45px;
+        }
+
+        .form {
+            border: 7px solid #b46e13d4;
+            border-style: dotted;
+            display: inline-block;
+            margin: 103px 36px;
+            padding: 4px 103px;
+            width: 20%;
+            border-radius: 20px;
+            color: #e6635e;
+            font-size: 16px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .details input {
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            font-size: 15px;
+            margin: 13px -56px;
+            padding: 6px 4px;
+            width: 359px;
+            border: #e6635e;
+            background-color: #e6635e48;
+            border-radius: 8px;
+            text-align: center;
+            display: block;
+        }
+
+        .form h1 {
+            text-align: center;
+            text-decoration: double;
+        }
+
+        .details button {
+            background-color: #f4141476;
+            display: block;
+            width: 268px;
+            margin: 23px auto;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: #e6635e;
+            border-radius: 20px;
+            color: rgb(101, 7, 7);
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .sub:hover {
+            background-color: #faf5da;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="left">
+            <img src="images/Picture1.png">
+            <div>Fitness Freak</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">BMI Calculator</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">📞Contact Us</button>
+            <button class="btn">✉Mail Us</button>
+        </div>
+    </header>
+    <div class="form">
+        <h1>Enroll Yourself Now!!</h1>
+        <form action="noaction.php">
+            <div class="details">
+                <input type="text" placeholder="Enter Your Name" id="MyGym">
+            </div>
+            <div class="details">
+                <input type="number" placeholder="Enter Age" id="MyGym">
+            </div>
+            <div class="details">
+                <input type="text" placeholder="Enter Your Gender" id="MyGym" </div>
+                <div class="details">
+                    <input type="text" placeholder="Enter Phone Number" id="MyGym">
+                </div>
+                <div class="details">
+                    <input type="email" placeholder="Enter Email Id" id="MyGym">
+                </div>
+                <button class="sub">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
